@@ -90,8 +90,6 @@ def print_bools_2d(bools_2d: list[list[bool | Particle | None]]) -> None:
                 out += str(col)
             else:
                 out += f"{color} "
-            # out += str(col) if col else " "
-            # out += "*" if col else " "
         out += color + "|"
     out += color + "+" + "-" * len(bools_2d[-1]) + "+"
     print(out)
@@ -148,9 +146,6 @@ while True:
 
         os.system("clear")
         print_bools_2d(board)
-        # print(parts[0])
-        # for part in parts:
-        #     print(part)
         count = 0
         for row in board:
             for col in row:
@@ -163,5 +158,3 @@ while True:
     except KeyboardInterrupt:
         print()
         exit(0)
-
-    # except IndexError:
